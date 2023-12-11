@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/** HEADER **/
+
+header nav {
+    background-color: black;
+}
+
+header nav img {
+    width: 100px;
+}
+
+header nav .nav-link {
+    color: white;
+}
+
+header nav .navbar-nav:hover {
+    --bs-nav-link-hover-color: #ffd100;
+}
