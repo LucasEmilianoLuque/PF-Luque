@@ -4,15 +4,31 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url(../img/fondobody.jpg);
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-areas: 
+    "header"   "header"   "header"
+    "main"     "main"     "main"
+    "footer"   "footer"   "footer";
+    grid-template-rows: 100px, 518px;
+}
+
+
 /** HEADER **/
 
 header {
-    
+    grid-area: header;
+    font-size: 18px;
+    font-style: bold;
 }
 
 
 header nav {
     background-color: black;
+    height: 100%;
 }
 
 header nav img {
@@ -25,4 +41,105 @@ header nav .nav-link {
 
 header nav .navbar-nav:hover {
     --bs-nav-link-hover-color: #ffd100;
+}
+
+
+/** MAIN **/
+
+main {
+    grid-area: main;
+}
+
+.banner img {
+    max-height: 518px;
+}
+
+.nosotrosContainer {
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
+}
+
+.nosotrosContainer article {
+    margin: 50px 0px;
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 15px;
+    border-color: white;
+}
+
+.nosotrosContainer p {
+    max-width: 600px;
+    max-height: 450px;
+    overflow-y: scroll;
+}
+
+/** FOOTER **/
+footer {
+    grid-area: footer;
+    width: 100%;
+    background-color: #221d21;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: auto;
+    padding: 25px 0;
+}
+
+footer ul {
+    padding: 0;
+    margin-bottom: 0;
+}
+footer .redes {
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+
+}
+
+footer .redes li {
+    padding: 0 15px ;
+}
+
+footer .redes li a img {
+    width: 30px;
+}
+
+footer .logoFooter {
+    width: 125px;
+    margin: 25px;
+    opacity: 0.25;
+}
+
+footer .politicas {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+footer .politicas li {
+    margin: 0 20px;
+}
+
+footer .politicas li a button {
+    width: 150px;
+    height: 40px;
+    border: 0;
+    color: #fff;
+    background-color: #433d3d;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: normal;
+}
+
+footer .copyright {
+    margin-top: 20px;
+}
+
+footer .copyright span {
+    color: rgb(56, 56, 56);
 }
