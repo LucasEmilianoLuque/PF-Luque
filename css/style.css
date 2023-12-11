@@ -376,6 +376,49 @@ footer .copyright span {
 }
 
 
+/** NOVEDADES **/
+
+.novedades {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+
+}
+
+.noticia {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 75px;
+}
+
+.imagenNoticia {
+    width: 300px;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.noticia img {
+    width: 300px;
+    border-radius: 45px;
+}
+
+.textoNoticia {
+    padding: 25px;
+    margin-left: 20px;
+}
+
+.noticia h2 {
+    color: #ffd60a;
+}
+
+
+.noticia p {
+    width: 30vw;
+    color: #fff;
+}
+
 
 
 @media screen and (max-width: 768px) {
