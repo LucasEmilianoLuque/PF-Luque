@@ -63,9 +63,9 @@ main .bannerSubmain {
   border-radius: 15px;
 }
 #sobrenosotros p {
+  padding-top: 10px;
   max-width: 600px;
   max-height: 450px;
-  overflow-y: scroll;
 }
 
 /** FOOTER **/
