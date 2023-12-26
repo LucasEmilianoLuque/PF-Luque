@@ -279,7 +279,6 @@ footer .copyright span {
 }
 
 .containerEncuesta {
-  width: 800px;
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
