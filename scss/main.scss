@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: url(../img/fondobody.jpg);
+    background-image: url(../img/fondobody.webp);
     font-family: 'Nunito', sans-serif;
     font-family: 'Roboto', sans-serif;
     display: grid;
@@ -13,7 +13,7 @@ body {
     "header   header   header"
     "main     main     main"
     "footer   footer   footer";
-    grid-template-rows: 100px, 518px;
+    grid-template-rows: 100px, 100vh, 1fr;
 }
 
 /** HEADER **/
@@ -22,7 +22,7 @@ header {
     grid-area: header;
     font-size: 18px;
     font-style: bold;
-    background-color: black;
+    background-color: rgb(100, 100, 100);
     min-height: 100px;
     nav {
         height: 100%;
@@ -44,17 +44,22 @@ main {
     grid-area: main;
     .banner {
         padding-top: 100px;
-        img {
-            height: 518px;
-        }
+        width: 100%;
+    }
+    .bannerSubmain {
+        width: 100%;
     }
 }
 
-.nosotrosContainer {
+
+#sobrenosotros {
     color: white;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+    img {
+        width: 100%;
+    }
     article {
         margin: 50px 0px;
         backdrop-filter: blur(10px);
@@ -140,26 +145,25 @@ footer {
     flex-flow: column wrap;
     align-items: center ;
 }
-.productosIzquierda {
+.productosBuscador {
     display: flex;
     flex-flow: row wrap;
     align-items: center;
     margin: 50px;
-}
- 
-
-.inputBuscador {
-    border-radius: 8px;
-    width: 300px;
-    height: 30px;
-}
-
-.buttonBuscador {
-    height: 30px;
-    padding: 5px;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    button {
+        border-radius: 8px;
+        border: black 1px solid;
+        margin-right: 5px;
+        img {
+            height: 30px;
+            padding: 5px;
+        }
+    }
+    input {
+        border-radius: 8px;
+        width: 300px;
+        height: 30px;
+    }
 }
 
 
