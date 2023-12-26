@@ -1,0 +1,60 @@
+.divContacto {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerContacto {
+    width: 710px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    margin: 25px;
+    padding: 20px;
+    border: solid white 2px;
+    border-radius: 8px;
+    backdrop-filter: blur(8px);
+}
+
+.encabezadoContacto {
+    margin: 25px;
+    text-align: center;
+    color: #fff;
+}
+
+.contenidoContacto {
+    form {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.inputContacto {
+    margin: 5px;
+	width: 350px;
+	height: 32px;
+	padding: 4px 8px;
+	border-radius: 8px;
+}
+
+.textareaMensaje {
+    margin: 5px;
+	width: 350px;
+	height: 100px;
+	padding: 4px 8px;
+	border-radius: 8px;
+}
+
+.submitButton {
+     width: 120px;
+     height: 32px;
+     padding: 0px 10px 0px 10px;
+     background: #EBEBEB;
+     border-radius: 8px;
+     font-weight: 800;
+     text-align: center;
+}

@@ -43,28 +43,6 @@ main .banner {
   width: 100%;
 }
 
-#sobrenosotros {
-  color: white;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-around;
-}
-#sobrenosotros img {
-  width: 100%;
-}
-#sobrenosotros article {
-  margin: 50px 0px;
-  backdrop-filter: blur(10px);
-  padding: 25px;
-  border: solid 1px white;
-  border-radius: 15px;
-}
-#sobrenosotros p {
-  padding-top: 10px;
-  max-width: 600px;
-  max-height: 450px;
-}
-
 /** FOOTER **/
 footer {
   grid-area: footer;
@@ -121,6 +99,29 @@ footer .copyright {
 }
 footer .copyright span {
   color: rgb(56, 56, 56);
+}
+
+/* HOME */
+#sobrenosotros {
+  color: white;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+#sobrenosotros img {
+  width: 100%;
+}
+#sobrenosotros article {
+  margin: 50px 0px;
+  backdrop-filter: blur(10px);
+  padding: 25px;
+  border: solid 1px white;
+  border-radius: 15px;
+}
+#sobrenosotros p {
+  padding-top: 10px;
+  max-width: 600px;
+  max-height: 450px;
 }
 
 /** PRODUCTOS **/
