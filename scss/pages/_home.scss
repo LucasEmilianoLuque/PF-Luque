@@ -1,0 +1,22 @@
+#sobrenosotros {
+    color: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    img {
+        width: 100%;
+    }
+    article {
+        margin: 50px 0px;
+        backdrop-filter: blur(10px);
+        padding: 25px;
+        border: solid 1px white;
+        border-radius: 15px;
+    }
+    p {
+        padding-top: 10px;
+        max-width: 600px;
+        max-height: 450px;
+    }
+
+}
