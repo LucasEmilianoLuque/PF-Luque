@@ -43,8 +43,8 @@ footer {
   width: 100%;
   background-color: rgb(100, 100, 100);
   display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
+  flex-flow: row wrap;
+  justify-content: space-between;
   align-items: center;
   align-content: center;
   margin-top: auto;
@@ -57,9 +57,10 @@ footer ul {
 footer .redes {
   list-style: none;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
 }
 footer .redes li {
+  margin: 5px;
   padding: 0 15px;
 }
 footer .redes li a img {
@@ -72,7 +73,7 @@ footer .logoFooter {
 }
 footer .politicas {
   display: flex;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
   justify-content: center;
   list-style: none;
 }
@@ -366,6 +367,17 @@ footer .politicas li {
 }
 
 @media screen and (max-width: 1000px) {
+  /** MAIN **/
+  footer {
+    flex-flow: column;
+  }
+  footer .politicas {
+    flex-flow: column;
+  }
+  footer .redes {
+    flex-flow: row;
+    margin-top: 10px;
+  }
   /** PRODUCTOS **/
   .imagenesProducto {
     grid-template-areas: "producto1   producto2" "producto3   producto4" "producto5   producto6" "producto7   producto8" "producto9   producto9";
@@ -380,7 +392,6 @@ footer .politicas li {
   }
 }
 @media screen and (max-width: 768px) {
-  /** MAIN **/
   /** HOME **/
   .homeArticle {
     width: 80%;
