@@ -1,19 +1,20 @@
 .novedades {
     display: flex;
     flex-flow: column wrap;
-    align-items: flex-start;
+    align-items: center;
 
 }
 
 .noticia {
     display: flex;
     flex-flow: row wrap;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     margin: 75px;
     border: solid white 2px;
     border-radius: 8px;
     backdrop-filter: blur(8px);
+    padding: 5px;
     img {
         width: 300px;
         border-radius: 45px;
@@ -21,20 +22,14 @@
     }
     h2 {
         color: #ffd60a;
+        max-width: 370px;
     }
     p {
-        max-width: 30vw;
+        max-width: 300px;
         color: #fff;
     }
 }
 
-.imagenNoticia {
-    width: 300px;
-    display: flex;
-    flex-flow: column wrap;
-}
-
 .textoNoticia {
     padding: 25px;
-    margin-left: 20px;
 }

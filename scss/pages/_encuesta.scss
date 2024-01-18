@@ -34,7 +34,7 @@
         font-size: 28px;
     }
     p {
-        width: 500px;
+        max-width: 500px;
         font-size: 16px;
     }
 } 
@@ -45,7 +45,7 @@
     align-items: center;
     .encuestas {
         margin: 30px;
-        width: 710px;
+        width: 75%;
         display: flex;
         flex-flow: row wrap;
         justify-content: flex-start;
@@ -56,14 +56,14 @@
             font-size: 18px;
         }
         hr {
-            width: 710px;
+            width: 100%;
             margin-bottom: 5px;
         }
     }
 }
 
 .respuestas {
-    width: 710px;
+    width: 100%;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
